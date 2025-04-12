@@ -58,7 +58,17 @@
                 </ListView>
                 <Label Content="Поиск"/>
                 <TextBox x:Name="Group_TextBox" Width="200" Margin="5 -20 5 0  " TextChanged="Group_TextBox_TextChanged"/>
-               
+                <Button x:Name="AddAnimal" Click="AddAnimal_Click" Height="30" Content="Добавить заявку"/>
+                <ComboBox ItemsSource="{Binding animals}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock >
+                          <Run Text="{Binding Name}" />
+                            </TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                    
+                </ComboBox>
 
             </StackPanel>
         </ScrollViewer>

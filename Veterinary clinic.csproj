@@ -129,6 +129,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageApp\PageNewAnimal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PageApp\PageAutho.xaml.cs">
@@ -139,6 +143,9 @@
     </Compile>
     <Compile Include="PageApp\PageMainMenu.xaml.cs">
       <DependentUpon>PageMainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageApp\PageNewAnimal.xaml.cs">
+      <DependentUpon>PageNewAnimal.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

@@ -32,12 +32,14 @@ namespace Veterinary_clinic.PageApp
     {   
         public static List<Reception> receptions { get; set; }
         public ObservableCollection<Reception> receptions1 { get; set; }
+        public static List<Animals> animals { get; set; }
         public ICollectionView animalView { get; set; }
         public PageMainMenu()
         {
             InitializeComponent();
             Listanimals.ItemsSource = App.Connection.Animals.ToList();
             receptions = new List<Reception>(asd.veterinary_ClinicEntities.Reception.Where(i => i.lsDelete == true).ToList());
+            animals = new List<Animals>((asd.veterinary_ClinicEntities.Animals.ToList()));
             this.DataContext = this;
         }
     
@@ -70,6 +72,9 @@ namespace Veterinary_clinic.PageApp
             Listanimals.ItemsSource = new ObservableCollection<Reception>(filteredProducts);
         }
 
-     
+        private void AddAnimal_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageApp.PageNewAnimal());
+        }
     }
 }
