@@ -9,6 +9,22 @@
       Title="PageAutho">
 
     <Grid>
-        <
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
+            <Label Content="Login" FontSize="30"/>
+            <TextBox x:Name="loginbd"  />
+          
+            <Button Content="Void" x:Name="Voidbd" Click="Voidbd_Click" Margin="30"/>
+
+        </StackPanel>
     </Grid>
 </Page>

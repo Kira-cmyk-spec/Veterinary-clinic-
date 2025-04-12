@@ -5,15 +5,15 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="edd3bd6099954a688d49512f3c2d7ee1" Name="Diagram1">
-        <EntityTypeShape EntityType="Veterinary_clinicModel.Animals" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="Veterinary_clinicModel.Doct" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="Veterinary_clinicModel.Gender" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="Veterinary_clinicModel.Reception" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="Veterinary_clinicModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Veterinary_clinicModel.Post" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="Veterinary_clinicModel.FK_Animals_Gender" ManuallyRouted="false" />
-        <AssociationConnector Association="Veterinary_clinicModel.FK_Reception_Animals" ManuallyRouted="false" />
-        <AssociationConnector Association="Veterinary_clinicModel.FK_Reception_Doct" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Veterinary_clinicModel.Animals" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="Veterinary_clinicModel.Doct" Width="1.5" PointX="3" PointY="5.25" />
+        <EntityTypeShape EntityType="Veterinary_clinicModel.Gender" Width="1.5" PointX="0.75" PointY="1.375" />
+        <EntityTypeShape EntityType="Veterinary_clinicModel.Reception" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="Veterinary_clinicModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" />
+        <EntityTypeShape EntityType="Veterinary_clinicModel.Post" Width="1.5" PointX="7.75" PointY="0.75" />
+        <AssociationConnector Association="Veterinary_clinicModel.FK_Animals_Gender" />
+        <AssociationConnector Association="Veterinary_clinicModel.FK_Reception_Animals" />
+        <AssociationConnector Association="Veterinary_clinicModel.FK_Reception_Doct" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

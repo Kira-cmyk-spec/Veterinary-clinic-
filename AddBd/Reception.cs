@@ -19,7 +19,7 @@ namespace Veterinary_clinic.AddBd
         public int id_Doc { get; set; }
         public System.DateTime Date { get; set; }
         public string Dicription { get; set; }
-        public int lsDelete { get; set; }
+        public bool lsDelete { get; set; }
     
         public virtual Animals Animals { get; set; }
         public virtual Doct Doct { get; set; }
